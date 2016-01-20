@@ -1,0 +1,41 @@
+#Todos {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.todo-input {
+  padding: 0 12px;
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid #aaa;
+
+  &:disabled, &.editable {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: default;
+  }
+}
+
+.Todo-delete {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 6px;
+  margin-left: 10px;
+  background-color: #111;
+  color: #fff;
+  font-size: 14px;
+  font-family: Arial;
+  cursor: pointer;
+  border: none;
+}
+
+.Todo-item {
+
+  &.Todo-completed {
+
+    label {
+      text-decoration: line-through;
+    }
+  }
+}
